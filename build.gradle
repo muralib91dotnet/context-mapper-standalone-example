@@ -1,7 +1,7 @@
 plugins {
   id "java"
   id "eclipse"
-  id "org.xtext.builder" version "2.0.7"
+  id "org.xtext.builder" version "3.0.0"
   id "application"
 }
 
@@ -62,4 +62,5 @@ jar {
         }
     }
     exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
+    duplicatesStrategy = 'include'
 }
